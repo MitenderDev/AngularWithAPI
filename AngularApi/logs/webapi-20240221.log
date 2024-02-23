@@ -1,0 +1,146 @@
+2024-02-21 12:15:55.251 +05:30  INF  Login is Working
+2024-02-21 12:15:55.639 +05:30  INF  getting user data
+2024-02-21 17:41:41.101 +05:30  INF  getting user data
+2024-02-21 18:02:42.803 +05:30  INF  getting user data
+2024-02-21 18:03:11.579 +05:30  INF  getting user data
+2024-02-21 18:56:16.984 +05:30  INF  getting user data
+2024-02-21 18:56:20.372 +05:30  INF  getting user data
+2024-02-21 18:56:21.310 +05:30  ERR  An unhandled exception has occurred while executing the request.System.InvalidOperationException: A second operation was started on this context instance before a previous operation completed. This is usually caused by different threads concurrently using the same instance of DbContext. For more information on how to avoid threading issues with DbContext, see https://go.microsoft.com/fwlink/?linkid=2097913.
+   at Microsoft.EntityFrameworkCore.Infrastructure.Internal.ConcurrencyDetector.EnterCriticalSection()
+   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnWriteResume(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonCollectionConverter`2.OnTryWrite(Utf8JsonWriter writer, TCollection value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.Converters.IAsyncEnumerableOfTConverter`2.OnTryWrite(Utf8JsonWriter writer, TAsyncEnumerable value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.TryWrite(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCore(Utf8JsonWriter writer, T& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.Serialization.JsonConverter`1.WriteCoreAsObject(Utf8JsonWriter writer, Object value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteCore[TValue](JsonConverter jsonConverter, Utf8JsonWriter writer, TValue& value, JsonSerializerOptions options, WriteStack& state)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at System.Text.Json.JsonSerializer.WriteStreamAsync[TValue](Stream utf8Json, TValue value, JsonTypeInfo jsonTypeInfo, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Mvc.Formatters.SystemTextJsonOutputFormatter.WriteResponseBodyAsync(OutputFormatterWriteContext context, Encoding selectedEncoding)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Routing.EndpointMiddleware.<Invoke>g__AwaitRequestTask|6_0(Endpoint endpoint, Task requestTask, ILogger logger)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddleware.Invoke(HttpContext context)
+
+2024-02-21 18:56:38.870 +05:30  INF  getting user data
+2024-02-21 18:57:11.173 +05:30  INF  getting user data
+2024-02-21 18:57:26.490 +05:30  INF  getting user data
+2024-02-21 18:57:45.365 +05:30  INF  getting user data
+2024-02-21 18:57:58.079 +05:30  INF  getting user data
+2024-02-21 18:58:03.253 +05:30  INF  getting user data
+2024-02-21 18:59:41.698 +05:30  INF  getting user data
+2024-02-21 19:00:17.278 +05:30  INF  getting user data
+2024-02-21 19:00:26.584 +05:30  INF  getting user data
+2024-02-21 19:00:27.585 +05:30  INF  getting user data
+2024-02-21 19:00:28.325 +05:30  INF  getting user data
+2024-02-21 19:00:32.718 +05:30  INF  getting user data
+2024-02-21 19:00:34.879 +05:30  INF  getting user data
+2024-02-21 19:00:38.251 +05:30  INF  getting user data
+2024-02-21 19:02:10.218 +05:30  INF  getting user data
+2024-02-21 19:02:21.969 +05:30  INF  getting user data
+2024-02-21 19:04:04.373 +05:30  INF  getting user data
+2024-02-21 19:04:29.461 +05:30  INF  getting user data
+2024-02-21 19:11:59.507 +05:30  INF  getting user data
+2024-02-21 19:13:44.867 +05:30  INF  getting user data
+2024-02-21 19:14:37.427 +05:30  INF  getting user data
+2024-02-21 19:16:43.708 +05:30  INF  getting user data
+2024-02-21 19:21:06.978 +05:30  INF  getting user data
+2024-02-21 19:21:46.665 +05:30  INF  getting user data
+2024-02-21 19:22:26.770 +05:30  INF  getting user data
+2024-02-21 19:22:32.782 +05:30  INF  getting user data
+2024-02-21 19:22:33.561 +05:30  INF  getting user data
+2024-02-21 19:22:34.005 +05:30  INF  getting user data
+2024-02-21 19:22:34.972 +05:30  INF  getting user data
+2024-02-21 19:22:35.690 +05:30  INF  getting user data
+2024-02-21 19:22:36.324 +05:30  INF  getting user data
+2024-02-21 19:22:36.454 +05:30  INF  getting user data
+2024-02-21 19:22:37.443 +05:30  INF  getting user data
+2024-02-21 19:22:38.487 +05:30  INF  getting user data
+2024-02-21 19:22:39.204 +05:30  INF  getting user data
+2024-02-21 19:22:42.569 +05:30  INF  getting user data
+2024-02-21 19:23:12.702 +05:30  INF  getting user data
+2024-02-21 19:23:36.289 +05:30  INF  getting user data
+2024-02-21 19:23:48.487 +05:30  INF  getting user data
+2024-02-21 19:23:53.090 +05:30  INF  getting user data
+2024-02-21 19:24:06.037 +05:30  INF  getting user data
+2024-02-21 19:24:28.030 +05:30  INF  getting user data
+2024-02-21 19:24:56.360 +05:30  INF  getting user data
+2024-02-21 19:24:57.372 +05:30  INF  getting user data
+2024-02-21 19:25:06.885 +05:30  INF  getting user data
+2024-02-21 19:25:57.478 +05:30  INF  getting user data
+2024-02-21 19:26:32.454 +05:30  INF  getting user data
+2024-02-21 19:26:53.043 +05:30  INF  getting user data
+2024-02-21 19:28:29.349 +05:30  INF  getting user data
+2024-02-21 19:28:55.088 +05:30  INF  getting user data
+2024-02-21 19:29:21.004 +05:30  INF  getting user data
+2024-02-21 19:30:16.522 +05:30  INF  getting user data
+2024-02-21 19:31:15.820 +05:30  INF  getting user data
+2024-02-21 19:31:24.998 +05:30  INF  getting user data
+2024-02-21 19:33:12.928 +05:30  INF  getting user data
+2024-02-21 19:33:49.994 +05:30  INF  getting user data
+2024-02-21 19:35:01.253 +05:30  INF  getting user data
+2024-02-21 19:35:37.341 +05:30  INF  getting user data
+2024-02-21 19:35:46.173 +05:30  INF  getting user data
+2024-02-21 19:36:04.488 +05:30  INF  getting user data
+2024-02-21 19:36:35.303 +05:30  INF  getting user data
+2024-02-21 19:37:18.253 +05:30  INF  getting user data
+2024-02-21 19:37:30.857 +05:30  INF  getting user data
+2024-02-21 19:38:02.009 +05:30  INF  getting user data
+2024-02-21 19:41:05.233 +05:30  INF  getting user data
+2024-02-21 19:42:48.160 +05:30  INF  getting user data
+2024-02-21 19:47:22.330 +05:30  INF  getting user data
+2024-02-21 19:47:38.187 +05:30  INF  getting user data
+2024-02-21 19:47:51.525 +05:30  INF  getting user data
+2024-02-21 19:48:44.425 +05:30  INF  getting user data
+2024-02-21 19:48:50.029 +05:30  INF  getting user data
+2024-02-21 19:49:12.812 +05:30  INF  getting user data
+2024-02-21 19:49:40.803 +05:30  INF  getting user data
+2024-02-21 19:50:01.605 +05:30  INF  getting user data
+2024-02-21 19:53:47.842 +05:30  INF  getting user data
+2024-02-21 19:54:33.680 +05:30  INF  getting user data
+2024-02-21 19:55:21.560 +05:30  INF  getting user data
+2024-02-21 19:55:38.424 +05:30  INF  getting user data
+2024-02-21 19:55:55.889 +05:30  INF  getting user data
+2024-02-21 19:56:16.100 +05:30  INF  getting user data
+2024-02-21 20:00:09.142 +05:30  INF  getting user data
+2024-02-21 20:00:48.957 +05:30  INF  getting user data
+2024-02-21 20:03:58.777 +05:30  INF  getting user data
+2024-02-21 20:04:09.448 +05:30  INF  getting user data
+2024-02-21 20:04:37.962 +05:30  INF  getting user data
+2024-02-21 20:18:01.090 +05:30  INF  getting user data
+2024-02-21 20:19:22.270 +05:30  INF  getting user data
+2024-02-21 20:19:30.280 +05:30  INF  getting user data
+2024-02-21 20:20:41.256 +05:30  INF  getting user data
+2024-02-21 20:20:49.033 +05:30  INF  getting user data
+2024-02-21 20:20:52.896 +05:30  INF  getting user data
+2024-02-21 20:20:59.864 +05:30  INF  getting user data
+2024-02-21 20:23:43.501 +05:30  INF  getting user data
+2024-02-21 20:26:20.663 +05:30  INF  getting user data
+2024-02-21 20:27:45.763 +05:30  INF  getting user data
+2024-02-21 20:28:01.483 +05:30  INF  getting user data
+2024-02-21 20:28:20.945 +05:30  INF  getting user data
+2024-02-21 20:35:13.578 +05:30  INF  getting user data
+2024-02-21 20:35:20.212 +05:30  INF  getting user data
+2024-02-21 20:35:54.385 +05:30  INF  getting user data
+2024-02-21 20:36:06.738 +05:30  INF  getting user data
+2024-02-21 20:37:22.184 +05:30  INF  getting user data
+2024-02-21 20:49:57.112 +05:30  INF  getting user data
+2024-02-21 20:51:02.713 +05:30  INF  getting user data
+2024-02-21 20:51:43.019 +05:30  INF  getting user data
+2024-02-21 20:53:54.609 +05:30  INF  getting user data
+2024-02-21 20:54:03.237 +05:30  INF  getting user data
+2024-02-21 20:55:17.310 +05:30  INF  getting user data
+2024-02-21 20:55:21.996 +05:30  INF  getting user data
+2024-02-21 20:55:24.676 +05:30  INF  getting user data
+2024-02-21 20:56:33.710 +05:30  INF  getting user data
